@@ -1,0 +1,85 @@
+.masque {
+  width: 250px;
+}
+
+.clique {
+  width: 250px;
+  color: lightpink;
+}
+
+.btton {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  color: rgb(158, 171, 220);
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: transform 1s;
+}
+a:hover {
+  color: rgb(158, 171, 220);
+}
+a:active {
+  transform: scale(1.2);
+}
+
+nav {
+  color: white;
+  padding-left: 20px;
+  gap: 75%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(238, 170, 170, 0.822);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav li {
+  display: inline-block;
+  gap: 100px;
+}
+
+.contenu {
+  margin-left: 20px;
+}
+
+.carte {
+  background-color: rgba(238, 170, 170, 0.822);
+  padding: 20px;
+  width: 200px;
+  border-radius: 20px;
+  border: solid 8px rgb(158, 171, 220);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: opacity(80%);
+}
+.carte:hover {
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.197);
+  filter: opacity(100%);
+}
+
+.carteRow {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.button {
+  background: rgb(158, 171, 220);
+  color: lightpink;
+  border-radius: 20px;
+}
+.button:focus {
+  transform: scale(1.5);
+  color: lightpink;
+}/*# sourceMappingURL=style.css.map */

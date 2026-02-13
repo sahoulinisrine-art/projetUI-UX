@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Exercice Bootstrap</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg border-bottom" style="background-color: #f7c6d9;">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    <img src="./img/286-2862515_cute.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Bootstrap
+                </a>
+
+                <!-- Bouton burger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Boutique</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <br>
+        <h1 class="text-center fw-bold">
+            Exercice Bootstrap
+        </h1>
+        <h3 class="text-center">
+            <small class="text-body-secondary fst-italic">Mon premier site</small>
+        </h3>
+        <br><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <strong>Quote of the day:</strong> <br>“Happiness is often just a small moment with the right
+                    person.”
+                </div>
+                <div class="col">
+                    <strong>Objectif:</strong> <br> Simple design. Clean structure. Better learning.
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./img/cat1.jpg.avif" class="card-img-top" style="height: 220px; object-fit: cover;"
+                        alt="cat">
+                    <h5 class="card-header">Introduction</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction</h5>
+                        <p class="card-text">Some quick example text.</p>
+                        <a href="#" class="btn" style="background-color: #f7c6d9; color: #000; border: none;">
+                            Go!
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./img/istockphoto-1077145200-612x612.jpg" class="card-img-top"
+                        style="height: 220px; object-fit: cover;" alt="cat">
+                    <h5 class="card-header">Exemples</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Frameworks</h5>
+                        <p class="card-text">Some quick example text.</p>
+                        <a href="#" class="btn" style="background-color: #f7c6d9; color: #000; border: none;">
+                            Go !
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./img/cat2.jpg.avif" class="card-img-top" style="height: 220px; object-fit: cover;"
+                        alt="cat">
+                    <h5 class="card-header">Théorie</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Synthèses cours</h5>
+                        <p class="card-text">Some quick example text.</p>
+                        <a href="#" class="btn" style="background-color: #f7c6d9; color: #000; border: none;">
+                            Go !
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container my-5">
+        <div class="p-4 border rounded bg-light">
+            <h3>Sign In</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Message</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary"style="background-color: #f7c6d9; color: #000; border: none;">Envoyer</button>
+                                    
+            </form>
+        </div>
+    </div>
+
+    <br><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

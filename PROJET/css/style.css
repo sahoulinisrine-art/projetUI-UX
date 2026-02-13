@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* Couleurs générales */
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+h2 {
+  color: white;
+}
+
+/* Header top */
+.navTop {
+  margin: 5px 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.navTop img {
+  max-height: 80px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("../images/menuBurger.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar-toggler {
+  border: 0.5px solid white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* Search */
+.leftSearch input {
+  border-radius: 50px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.leftSearch button {
+  height: 30px;
+  padding: 0 5px;
+  border: none;
+  background: none;
+}
+
+.leftSearch img {
+  width: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .leftSearch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .leftSearch form {
+    flex-direction: row; /* input et loupe côte à côte */
+    align-items: center;
+  }
+  .leftSearch input {
+    width: 70%;
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
