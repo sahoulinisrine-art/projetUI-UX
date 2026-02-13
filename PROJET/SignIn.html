@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+
+    <!-- CSS Perso -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Sign In</title>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <!-- ===== TOP NAV ===== -->
+        <div class="navTop px-3 py-2">
+
+            <div class="d-flex align-items-center">
+                <img src="./images/logogaming.png" alt="logo" height="60" class="me-2">
+                <h2 class="titre mb-0" style="font-family: 'Electrolize', sans-serif;">JEUX VIDEO</h2>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center" style="font-family: 'Electrolize', sans-serif;">
+                <img class="me-3" src="./images/manetteHearder.jpg" alt="manette" width="30" height="30">
+                <a href="#" class="login-link me-3">SE CONNECTER</a>
+                <span class="text-white me-3">|</span>
+                <a href="#" class="login-link" style=" text-decoration: underline;">S'INSCRIRE</a>
+            </div>
+
+            <!-- Burger -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z" />
+                </svg>
+            </button>
+
+        </div>
+
+        <!-- ===== NAVBAR ===== -->
+        <nav class="navbar navbar-expand-lg navbar-dark navBottom border-bottom">
+            <div class="container-fluid">
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                    <!-- Liens -->
+                    <ul class="navbar-nav mx-auto text-center" style="
+                                    font-family: 'Electrolize', sans-serif;">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">ACCUEIL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">GAMES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FORUM</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                    </ul>
+
+                    <!-- Search -->
+                    <div class="leftSearch ms-lg-3 mt-3 mt-lg-0">
+                        <form class="d-flex align-items-center">
+                            <input class="form-control form-control-sm me-2" type="search" placeholder="Search">
+                            <button type="submit">
+                                <img src="./images/search.png" alt="loupe">
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Login mobile -->
+                    <div class="d-lg-none mt-3 text-center">
+                        <button class="btn btn-outline-light me-2 mb-2" style="
+                                    font-family: 'Electrolize', sans-serif;">Se connecter</button>
+                        <button class="btn btn-light mb-2" style="
+                                    font-family: 'Electrolize', sans-serif;">S'inscrire</button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ================= FORMULAIRE ================= -->
+             <div class="header-notice" style="font-family: 'Electrolize', sans-serif; color: white ; margin-top: 10%;  margin-left: 60%; background-color: rgb(108, 9, 9); padding: 10px; ">
+            Rejoignez pour recevoir les dernières infos sorties et news
+        </div>
+    <div class="container" style="
+        background: 
+        url('./images/fondPages.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        ">
+
+        <div class="form-header" style="font-family: 'Electrolize', sans-serif; color: white ; margin-top: 5%; ">
+            <h1>INSCRIVEZ VOUS</h1>
+        </div>
+
+        <form class="registration-form" style="font-family: 'Electrolize', sans-serif; color: white ; display: flex; flex-direction: column; gap: 30px; margin-top: 5%;">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="age">ÂGE</label>
+                    <input type="number" id="age" name="age" class="form-control" required>
+                </div>
+
+                <div class="col">
+                    <label for="email">ADRESSE EMAIL</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Jeuxvideo@gmail.com" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="pseudo">PSEUDO</label>
+                    <input type="text" id="pseudo" name="pseudo" class="form-control" required>
+                </div>
+
+                <div class="col">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="checkbox-group" style=" display: flex; flex-direction: column; gap: 10px;">
+                <label class="form-check-label">
+                    <input type="checkbox" name="conditions" required>
+                    <span class="checkmark"></span>
+                    J'ACCEPTE LES CONDITIONS GENERALES
+                </label>
+                <br>
+                <label class="form-check-label">
+                    <input type="checkbox" name="notifications">
+                    <span class="checkmark"></span>
+                    JE SOUHAITE RECEVOIR DES NOTIFICATIONS SUR L'ACTU DES JEUX VIDEOS
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-outline-danger w-100" style=" font-size: 25px;" ><strong> LET'S GO !</strong></button>
+        </form>
+        <br><br><br>
+    </div>
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer style="background-color: rgb(10, 10, 10);">
+        <br><br>
+
+        <div class="footerBoxRow">
+            <div class="footerBoxRow1">
+
+                <div class="reseaux" style="font-family: 'Electrolize', sans-serif; 
+                    display:flex; 
+                    align-items:center; 
+                    position:relative;">
+
+                    <!-- Logo à gauche -->
+                    <img src="./images/logogaming.png" alt="logo" width="110px"
+                        style="margin-right: 50px; margin-left: 40px;">
+
+                    <div style="position:absolute; left:50%; transform:translateX(-50%);
+                        display:flex; align-items:center; gap:50px;">
+
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <img src="./images/twitter.jpg" alt="twitter" width="50px" height="50px"
+                                style="border-radius:10px;">
+                            <a href="https://www.twitter.com" style="color:white; text-decoration:none;"
+                                onmouseover=" this.style.textDecoration = 'underline'" ;
+                                onmouseout="this.style.textDecoration = 'none'">
+                                @JEUXVIDEO_
+                            </a>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <img src="./images/insta.jpg" alt="insta" width="60px" height="50px"
+                                style="border-radius:10px;">
+                            <a href="https://www.instagram.com" style="color:white; text-decoration:none; "
+                                onmouseover=" this.style.textDecoration = 'underline'" ;
+                                onmouseout="this.style.textDecoration = 'none'">
+                                JEUXVIDEO_
+                            </a>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <img src="./images/twitch.jpg" alt="twitch" width="55px" height="50px"
+                                style="border-radius:10px;">
+                            <a href="https://www.twitch.com" style="color:white; text-decoration:none;"
+                                onmouseover=" this.style.textDecoration = 'underline'" ;
+                                onmouseout="this.style.textDecoration = 'none'">
+                                JEUX VIDEO
+                            </a>
+                        </div>
+
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <img src="./images/discord.png" alt="discord" width="55px" height="50px"
+                                style="border-radius:10px;">
+                            <a href="https://www.discord.com" style="color:white; text-decoration:none;"
+                                onmouseover=" this.style.textDecoration = 'underline'" ;
+                                onmouseout="this.style.textDecoration = 'none'">
+                                JEUX VIDEO_
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="mt-auto text-center" style="color: rgb(160, 12, 12); 
+                  font-family: 'Electrolize', sans-serif; 
+                  font-size: 12px;">
+                    ©Copyright BY NISRINE SAHOULI
+                </p>
+
+            </div>
+        </div>
+        <br>
+    </footer>
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</div>
