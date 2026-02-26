@@ -1,1 +1,191 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/* ===== Couleurs générales ===== */
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Electrolize", sans-serif;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ===== Top bar ===== */
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: none;
+}
+
+/* ===== Navbar links spacing ===== */
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+/* ===== Burger ===== */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+/* ===== Search ===== */
+.leftSearch input {
+  border-radius: 50px;
+  height: 30px;
+  padding: 0 10px;
+  font-family: "Electrolize", sans-serif;
+}
+
+.leftSearch button {
+  height: 30px;
+  padding: 0 5px;
+  border: none;
+  background: none;
+}
+
+.leftSearch img {
+  width: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* ===== Login links texte ===== */
+.login-link {
+  color: white;
+  font-weight: 500;
+  font-family: "Electrolize", sans-serif;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .leftSearch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .leftSearch form {
+    flex-direction: row;
+    align-items: center;
+  }
+  .leftSearch input {
+    width: 70%;
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
+  .d-lg-none .login-link {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .blocAcceuil {
+    display: none;
+  }
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/heroHeaderAcceuil.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Bandeau horaires */
+.top-info {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Cadre central */
+.overlay-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 80px;
+  text-align: center;
+  border: 2px solid #c300ff;
+  box-shadow: 0 0 20px #c300ff;
+  color: white;
+  max-width: 800px;
+  letter-spacing: 2px;
+}
+
+.overlay-box h1 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  letter-spacing: 2.3px;
+}
+
+.overlay-box hr {
+  height: 3px;
+  border-top: px solid #c300ff;
+  background: #c300ff;
+  margin: 30px -80px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.hero-buttons a {
+  color: #ff00ff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+  color: white;
+  text-shadow: 0 0 10px #ff00ff;
+}/*# sourceMappingURL=style.css.map */

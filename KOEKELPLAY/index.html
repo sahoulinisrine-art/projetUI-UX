@@ -1,15 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-        <!-- CSS Perso -->
+
+    <!-- Bootstrap 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Perso -->
     <link rel="stylesheet" href="CSS/style.css">
-    
+
+    <title>Acceuil</title>
+
+    <!-- Prix : 15€ pour 1 semaine (3h par jour) -->
+
+
 </head>
+
 <body>
-    
+
+    <!-- ================= HEADER ================= -->
+
+    <header style="background-color: black; color: white;">
+
+        <!-- ===== TOP NAV ===== -->
+        <div class="navTop px-3 py-2">
+
+            <div class="d-flex align-items-center" style="margin-left: 40px;">
+                <h2 class="titre mb-0" style="font-family: 'Electrolize', sans-serif;">K</h2>
+                <img src="./img/logoKoekel.png" alt="logo" height="60" class="me-2">
+                <h2 class="titre mb-0" style="font-family: 'Electrolize', sans-serif;">EKEL PLAY</h2>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center" style="font-family: 'Electrolize', sans-serif; margin-right: 40px;">
+                <img class="me-3" src="./img/manetteHearder.jpg" alt="manette" width="30" height="30">
+                <a href="#" class="login-link me-3">SE CONNECTER</a>
+                <span class="text-white me-3">|</span>
+                <a href="./SignIn.html" class="login-link">S'INSCRIRE</a>
+            </div>
+
+            <!-- Burger -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z" />
+                </svg>
+            </button>
+
+        </div>
+
+        <!-- ===== NAVBAR ===== -->
+        <nav class="navbar navbar-expand-lg navbar-dark navBottom border-bottom">
+            <div class="container-fluid">
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                    <!-- Liens -->
+                    <ul class="navbar-nav mx-auto text-center" style="
+                                    font-family: 'Electrolize', sans-serif;">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">ACCUEIL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">TOURNOIS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FORUM</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./gallery.html">GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">CONTACT</a></li>
+                    </ul>
+
+                    <!-- Search -->
+                    <div class="leftSearch ms-lg-3 mt-3 mt-lg-0" style="margin-right: 40px;">
+                        <form class="d-flex align-items-center">
+                            <input class="form-control form-control-sm me-2" type="search" placeholder="Search">
+                            <button type="submit">
+                                <img src="./img/search.png" alt="loupe">
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Login mobile -->
+                    <div class="d-lg-none mt-3 text-center">
+                        <button class="btn btn-outline-light me-2 mb-2" style="
+                                    font-family: 'Electrolize', sans-serif;">Se connecter</button>
+                        <button class="btn btn-light mb-2" style="
+                                    font-family: 'Electrolize', sans-serif;">S'inscrire</button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+
+            <!-- Bandeau horaires -->
+            <div class="top-info">
+                DU LUNDI AU VENDREDI DE 9H - 12H ET 13H - 16H
+            </div>
+
+            <!-- Cadre central -->
+            <div class="overlay-box">
+                <h2 style="font-family: 'Electrolize', sans-serif;">
+                    VENEZ JOUER À CFITECH<br>
+                    LÀ OÙ TOUTES LES PARTIES<br>
+                    DEVIENNENT LÉGENDAIRES !
+                </h2>
+                <hr>
+                <div class="hero-buttons">
+                    <a href="./SignIn.html">S'INSCRIRE</a>
+                    <span>|</span>
+                    <a href="#">EN SAVOIR PLUS</a>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+    <main>
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
